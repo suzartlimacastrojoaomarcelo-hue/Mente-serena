@@ -48,7 +48,8 @@ module.exports = app;
 
 if (require.main === module) {
     require('./server').start().catch(error => {
-        console.error('Falha ao iniciar servidor:', error.message);
+        const { formatStartupError } = require('./config/startup-error');
+        console.error('Falha ao iniciar servidor:', formatStartupError(error));
         process.exitCode = 1;
     });
 }
