@@ -4,6 +4,9 @@
   "main": "src/cloudflare-worker.mjs",
   "keep_vars": true,
   "compatibility_date": "2026-09-27",
+  "vars": {
+    "BACKEND_URL": "https://mente-serena-api.onrender.com"
+  },
   "assets": {
     "directory": "./src/frontend",
     "binding": "ASSETS",

@@ -5,7 +5,12 @@ public/
 npm-debug.log
 
 # Environment variables
+env
+env.*
 .env
+.env.*
+!.env.example
+!.env.test.example
 .env.development.local
 .env.test.local
 .env.production.local
